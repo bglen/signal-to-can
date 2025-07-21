@@ -1,0 +1,990 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8")
+	(paper "A4")
+	(lib_symbols)
+	(no_connect
+		(at 210.82 45.72)
+		(uuid "8126bcda-521e-4299-8915-f57559fc76dd")
+	)
+	(no_connect
+		(at 210.82 43.18)
+		(uuid "ebd90075-6d80-4343-98da-1b998a1b0697")
+	)
+	(wire
+		(pts
+			(xy 200.66 119.38) (xy 203.2 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0045b829-10be-4ff5-872b-de9a3b600f08")
+	)
+	(wire
+		(pts
+			(xy 120.65 58.42) (xy 123.19 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ce2395-a49c-43f2-a031-a8bf857f107b")
+	)
+	(wire
+		(pts
+			(xy 120.65 45.72) (xy 123.19 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0946f40e-b213-4ca9-88bc-c43fca59d114")
+	)
+	(wire
+		(pts
+			(xy 120.65 40.64) (xy 123.19 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cbbad56-7703-4917-8965-331f29dce980")
+	)
+	(wire
+		(pts
+			(xy 208.28 53.34) (xy 210.82 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1def5d6a-3553-41ed-98e2-e85d3869f7b8")
+	)
+	(wire
+		(pts
+			(xy 120.65 60.96) (xy 123.19 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "320b788c-fab2-4ca0-9690-0fff4b547ebd")
+	)
+	(wire
+		(pts
+			(xy 120.65 38.1) (xy 123.19 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b53fce9-d478-4e1c-b2fb-75141b538a56")
+	)
+	(wire
+		(pts
+			(xy 200.66 104.14) (xy 203.2 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71c57596-a78b-463e-934f-e92fb41898ec")
+	)
+	(wire
+		(pts
+			(xy 120.65 71.12) (xy 123.19 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "873c6e11-ba0c-4eec-822d-6813f3a4cae9")
+	)
+	(wire
+		(pts
+			(xy 208.28 48.26) (xy 210.82 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a08da68-a745-44df-9312-d78bf58e1241")
+	)
+	(wire
+		(pts
+			(xy 120.65 66.04) (xy 123.19 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90677f66-890b-4459-9528-ddc3f8c15c1f")
+	)
+	(wire
+		(pts
+			(xy 120.65 53.34) (xy 123.19 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "981b96d9-d8f6-439d-8669-7648461869e8")
+	)
+	(wire
+		(pts
+			(xy 120.65 68.58) (xy 123.19 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ce5f15-398d-4a9b-8ecb-79c6ab0afc6e")
+	)
+	(wire
+		(pts
+			(xy 200.66 109.22) (xy 203.2 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fdb42ea-d9ab-4c4b-ba99-0462207f0bd4")
+	)
+	(wire
+		(pts
+			(xy 208.28 50.8) (xy 210.82 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5c38f64-3cf1-4dd4-95fa-b2c999249a4c")
+	)
+	(wire
+		(pts
+			(xy 120.65 43.18) (xy 123.19 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afd20a51-a596-40d3-bd78-5ceff6789d5e")
+	)
+	(wire
+		(pts
+			(xy 120.65 55.88) (xy 123.19 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b891c04e-aaad-47a3-929d-3507c01f3f4f")
+	)
+	(wire
+		(pts
+			(xy 120.65 48.26) (xy 123.19 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd400859-0fe9-4ab2-85e4-ea277ac18803")
+	)
+	(wire
+		(pts
+			(xy 200.66 96.52) (xy 203.2 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be3cf96e-2ddb-4fc0-9f11-2ad6f1409d08")
+	)
+	(wire
+		(pts
+			(xy 200.66 101.6) (xy 203.2 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf25a4b4-215e-4e7b-a4eb-a1f876818b0a")
+	)
+	(wire
+		(pts
+			(xy 200.66 99.06) (xy 203.2 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0274160-ff7a-4088-b878-04588bbdd0e7")
+	)
+	(wire
+		(pts
+			(xy 120.65 50.8) (xy 123.19 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c91e7d52-def7-498f-8f7b-abcb4fb7ad25")
+	)
+	(wire
+		(pts
+			(xy 200.66 114.3) (xy 203.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c967ce27-9471-4ce6-af77-1b52e6930a3a")
+	)
+	(wire
+		(pts
+			(xy 200.66 116.84) (xy 203.2 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d21402e2-8acb-45e1-8985-5be7eefa01ca")
+	)
+	(wire
+		(pts
+			(xy 200.66 111.76) (xy 203.2 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbcb2033-30f9-431a-a88e-1ab197b9037b")
+	)
+	(wire
+		(pts
+			(xy 200.66 106.68) (xy 203.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4850392-cb9c-4d2e-904b-8c46458a9d7f")
+	)
+	(label "CAN_STANDBY"
+		(at 123.19 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "116f96b0-a159-418a-b5b7-09542321a80b")
+	)
+	(label "3.3V_ANALOG_INPUT_6"
+		(at 123.19 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12198897-5165-4721-821a-86f693566b9a")
+	)
+	(label "CAN_RX"
+		(at 208.28 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "123d4e55-8098-45f9-8a93-849ccb8ed06c")
+	)
+	(label "3.3V_ANALOG_INPUT_9"
+		(at 200.66 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "12c04ec0-4aa8-4661-8ba9-402b0ee4f1da")
+	)
+	(label "3.3V_ANALOG_INPUT_5"
+		(at 123.19 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a851bbf-a234-42fe-b4e6-11a796797144")
+	)
+	(label "CAN_RX"
+		(at 123.19 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35c50cab-7652-4a5b-abe9-1982a985271c")
+	)
+	(label "3.3V_ANALOG_INPUT_1"
+		(at 200.66 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "382a95c9-8d25-4420-ae68-8235b7b5125e")
+	)
+	(label "3.3V_ANALOG_INPUT_2"
+		(at 200.66 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3904f081-6640-4675-b7f9-c01e0fbfbe4c")
+	)
+	(label "3.3V_ANALOG_INPUT_4"
+		(at 123.19 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42dcf2a4-86ec-4e78-b518-69a6ffd2e6cf")
+	)
+	(label "CAN_STANDBY"
+		(at 208.28 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "457af3b4-1134-46e8-b9b2-a1da3226256a")
+	)
+	(label "3.3V_ANALOG_INPUT_0"
+		(at 123.19 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b50381b-0112-4812-8214-388faa44c2d3")
+	)
+	(label "3.3V_ANALOG_INPUT_1"
+		(at 123.19 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e637fb7-efdb-42f8-96d1-1ec98465342a")
+	)
+	(label "3.3V_ANALOG_INPUT_6"
+		(at 200.66 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "54b80588-91db-4796-8cc7-4025979f9f0e")
+	)
+	(label "3.3V_ANALOG_INPUT_8"
+		(at 123.19 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "559e33c3-650f-48a6-a37f-10c936436162")
+	)
+	(label "3.3V_ANALOG_INPUT_0"
+		(at 200.66 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5732280c-29c4-48e3-9bf1-669244b7c908")
+	)
+	(label "3.3V_ANALOG_INPUT_9"
+		(at 123.19 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f49d9e6-6a1b-43c1-b82f-d6203c61bea1")
+	)
+	(label "CAN_TX"
+		(at 208.28 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "732d6ad1-5246-44e2-83ef-fdd99b3292c5")
+	)
+	(label "3.3V_ANALOG_INPUT_7"
+		(at 123.19 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "873b2130-83bd-48fc-9bf0-d2d54e9f3964")
+	)
+	(label "3.3V_ANALOG_INPUT_5"
+		(at 200.66 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8f76f1c3-6c32-4a78-a779-85c9f6940f51")
+	)
+	(label "3.3V_ANALOG_INPUT_3"
+		(at 200.66 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "943d2d09-8029-464d-b7cc-b525a60f3d9d")
+	)
+	(label "3.3V_ANALOG_INPUT_7"
+		(at 200.66 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ab67f0a4-e59d-4969-9a41-4ed06b9daf92")
+	)
+	(label "CAN_TX"
+		(at 123.19 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb0876da-2022-4b33-9153-29b85520a11c")
+	)
+	(label "3.3V_ANALOG_INPUT_3"
+		(at 123.19 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c62f36e5-e99a-4a28-a491-4c700a798d66")
+	)
+	(label "3.3V_ANALOG_INPUT_2"
+		(at 123.19 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8ebd0d4-273c-4291-b4b6-c357d26237c3")
+	)
+	(label "3.3V_ANALOG_INPUT_8"
+		(at 200.66 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "da6a4986-d391-41bb-9058-110ea571fe83")
+	)
+	(label "3.3V_ANALOG_INPUT_4"
+		(at 200.66 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f875d39c-a62b-452d-9b91-8497aef5717d")
+	)
+	(sheet
+		(at 203.2 93.98)
+		(size 25.4 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "27e62f74-b0b8-4d3c-8165-6cd2d919ee96")
+		(property "Sheetname" "Analog Front End"
+			(at 203.2 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "analog_front_end.kicad_sch"
+			(at 203.2 123.7746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_7" output
+			(at 203.2 114.3 180)
+			(uuid "819fb355-0a1f-45b0-9efa-208baa3dd32e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_1" output
+			(at 203.2 99.06 180)
+			(uuid "5a031a27-73e7-4170-9770-8a079ab5396c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_0" output
+			(at 203.2 96.52 180)
+			(uuid "7680f236-2142-4a63-a373-236c389028f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_9" output
+			(at 203.2 119.38 180)
+			(uuid "10c0d123-a208-4a48-86a5-5c6ceaf8b172")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_6" output
+			(at 203.2 111.76 180)
+			(uuid "affdcdab-0a70-4dd0-b323-61d2e9156841")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_3" output
+			(at 203.2 104.14 180)
+			(uuid "ea39ddb0-5c36-4abe-a0c3-183a3f9ba0da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_5" output
+			(at 203.2 109.22 180)
+			(uuid "e93701d0-7003-47a4-a1bd-7267f32db0fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_2" output
+			(at 203.2 101.6 180)
+			(uuid "b54832d3-298e-4d95-ba92-a0e5a4021faa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_4" output
+			(at 203.2 106.68 180)
+			(uuid "271738ce-43db-45b7-933b-daef80972eca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_8" output
+			(at 203.2 116.84 180)
+			(uuid "49b62a83-ffa1-4d76-9b18-3c6230e4155f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "signal-to-can"
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 92.71 121.92)
+		(size 30.48 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7b74f6f5-1560-4843-a54e-584b3d17c5b1")
+		(property "Sheetname" "Power Supply"
+			(at 92.71 121.2084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply_3v3_400ma_40V_protected.kicad_sch"
+			(at 92.71 131.3946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "signal-to-can"
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 210.82 40.64)
+		(size 22.86 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b93d8d5a-c9dc-4552-9959-3cf22fd198ac")
+		(property "Sheetname" "CAN Transciever"
+			(at 210.82 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "can_transciever_no_term.kicad_sch"
+			(at 210.82 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAN_P" bidirectional
+			(at 210.82 43.18 180)
+			(uuid "54b78a69-b485-4d4b-b3c5-bd2f6bc2648c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_N" bidirectional
+			(at 210.82 45.72 180)
+			(uuid "c5b20981-a40e-4d2a-b0a1-8a4866c886cc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_TX" bidirectional
+			(at 210.82 48.26 180)
+			(uuid "38f1ade5-1ab5-4861-b662-9d33df81da41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_STANDBY" bidirectional
+			(at 210.82 53.34 180)
+			(uuid "4a639922-c90d-4791-a754-48f5ed19c4a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_RX" bidirectional
+			(at 210.82 50.8 180)
+			(uuid "c299f88b-70c2-4bf8-80db-ca4a47cf7c70")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "signal-to-can"
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 85.09 35.56)
+		(size 35.56 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f7ca0aa3-2e40-412d-9746-08f02e08c71b")
+		(property "Sheetname" "Microcontroller"
+			(at 85.09 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "stm32f042k6ux.kicad_sch"
+			(at 85.09 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_5" input
+			(at 120.65 50.8 0)
+			(uuid "2e481a62-5b8a-4278-997f-eb6fb4eca1d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_1" input
+			(at 120.65 40.64 0)
+			(uuid "cb9f7cce-8948-40cb-a052-d25e7c8d1971")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_0" input
+			(at 120.65 38.1 0)
+			(uuid "a9d9cf9c-2952-42d8-8ac3-5e0af2fcdba2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_STANDBY" input
+			(at 120.65 71.12 0)
+			(uuid "835218b3-8733-471a-b43f-131f9bc21431")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_2" input
+			(at 120.65 43.18 0)
+			(uuid "48c30310-11a0-4a1f-9808-b08410380851")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_4" input
+			(at 120.65 48.26 0)
+			(uuid "cab09821-4b0b-4a06-ad85-99d914a91900")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_8" input
+			(at 120.65 58.42 0)
+			(uuid "c39dcd55-be75-4a41-bd54-fd166ea614db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_9" input
+			(at 120.65 60.96 0)
+			(uuid "9886799b-b0b9-47dc-abdb-e64aa0263dde")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_7" input
+			(at 120.65 55.88 0)
+			(uuid "c7254a42-4396-4038-b669-f3d00f3475f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_TX" input
+			(at 120.65 66.04 0)
+			(uuid "a7e71421-8222-4d12-b862-e719e6df3edd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_RX" input
+			(at 120.65 68.58 0)
+			(uuid "58c37943-d7ef-41d6-8bd8-3411630914ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_6" input
+			(at 120.65 53.34 0)
+			(uuid "e0176f21-c552-403d-a7cd-a341ea9683b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_ANALOG_INPUT_3" input
+			(at 120.65 45.72 0)
+			(uuid "6fd686bc-36de-4e45-8c03-8e38ea28918c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "signal-to-can"
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
