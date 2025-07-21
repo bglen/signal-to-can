@@ -418,7 +418,7 @@
     ],
     [
       "7b74f6f5-1560-4843-a54e-584b3d17c5b1",
-      "Power Supply"
+      "3.3V Linear Regulator"
     ],
     [
       "b93d8d5a-c9dc-4552-9959-3cf22fd198ac",
@@ -427,6 +427,10 @@
     [
       "27e62f74-b0b8-4d3c-8165-6cd2d919ee96",
       "Analog Front End"
+    ],
+    [
+      "1302be3c-854e-4381-9e1e-22325ed48fb8",
+      "5V Switching Regulator"
     ]
   ],
   "text_variables": {}
