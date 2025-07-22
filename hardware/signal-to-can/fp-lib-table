@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "signal_to_can")(type "KiCad")(uri "/Users/bglen/Documents/github/signal-to-can/hardware/signal-to-can/signal_to_can.pretty")(options "")(descr ""))
+)

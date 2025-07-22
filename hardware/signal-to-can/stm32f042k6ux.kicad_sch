@@ -5,6 +5,372 @@
 	(uuid "f34c7599-6633-495b-9dff-21a5f9fd82b2")
 	(paper "A4")
 	(lib_symbols
+		(symbol "+3.3V_1"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_1_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "+3.3V_2"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_2_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_2_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "+3.3V_3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x06"
 			(pin_names
 				(offset 1.016)
@@ -909,6 +1275,790 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GND_1"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_2"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_2_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_2_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_3_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_3_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_4"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_4_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_4_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_5"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_5_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_5_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_6"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_6_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_6_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_7"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_7_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_7_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_8"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_8_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_8_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:Jumper_3_Open"
 			(pin_names
 				(offset 0)
@@ -1099,6 +2249,180 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LED_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_1_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2048,12 +3372,6 @@
 		(uuid "01d42417-a5b7-4a91-8810-8e8161a2f0ac")
 	)
 	(junction
-		(at 123.19 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38bb9cbf-e791-48cc-8405-9e02f3517bc3")
-	)
-	(junction
 		(at 85.09 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2156,8 +3474,48 @@
 		(uuid "ffbf648d-6e11-4fe0-8dd2-3c3fdb6b7a50")
 	)
 	(no_connect
+		(at 208.28 102.87)
+		(uuid "0c28de52-bccd-4c44-9686-c03b7311fb13")
+	)
+	(no_connect
+		(at 233.68 100.33)
+		(uuid "0fb756ae-d51e-4cab-9399-b5b6947dc477")
+	)
+	(no_connect
+		(at 208.28 113.03)
+		(uuid "10409ef3-1075-4a1d-90ac-2c5678a2efcf")
+	)
+	(no_connect
+		(at 208.28 110.49)
+		(uuid "27452ac9-9188-45c3-8159-d6349d3178f4")
+	)
+	(no_connect
+		(at 208.28 107.95)
+		(uuid "4ee9c714-f65f-4a07-911d-df2ebaf8a056")
+	)
+	(no_connect
+		(at 233.68 97.79)
+		(uuid "87bf3b10-52d6-48c8-8411-b8bac6e5666f")
+	)
+	(no_connect
 		(at 78.74 100.33)
 		(uuid "93625d7f-6a35-49b8-9b6c-0a8bc4297ea0")
+	)
+	(no_connect
+		(at 233.68 115.57)
+		(uuid "bbe7b8ab-becd-4c51-92e4-873cf5025fac")
+	)
+	(no_connect
+		(at 208.28 115.57)
+		(uuid "c1576135-156b-461c-9917-6752acc22514")
+	)
+	(no_connect
+		(at 208.28 100.33)
+		(uuid "d0015c63-ab47-4248-8001-84bc563b27b6")
+	)
+	(no_connect
+		(at 233.68 102.87)
+		(uuid "df14bc85-7d6f-4e7a-ab50-637657a55cb8")
 	)
 	(wire
 		(pts
@@ -2251,16 +3609,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 100.33) (xy 208.28 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ffc6e3b-5c58-45c2-9ac2-f40e04bcf78f")
-	)
-	(wire
-		(pts
 			(xy 64.77 74.93) (xy 64.77 76.2)
 		)
 		(stroke
@@ -2328,16 +3676,6 @@
 			(type default)
 		)
 		(uuid "20f3a1b1-ef72-4334-839d-729da651b932")
-	)
-	(wire
-		(pts
-			(xy 181.61 102.87) (xy 208.28 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23cd4b79-9402-4fd5-93b0-146b3effa30c")
 	)
 	(wire
 		(pts
@@ -2561,16 +3899,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 95.25) (xy 208.28 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60b341bf-15b4-4f76-bf12-e5dfadd182ad")
-	)
-	(wire
-		(pts
 			(xy 110.49 87.63) (xy 110.49 86.36)
 		)
 		(stroke
@@ -2651,7 +3979,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 77.47) (xy 208.28 77.47)
+			(xy 205.74 77.47) (xy 208.28 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2708,6 +4036,16 @@
 			(type default)
 		)
 		(uuid "8b38976e-9e3a-412e-8919-9930dd5527bc")
+	)
+	(wire
+		(pts
+			(xy 205.74 85.09) (xy 208.28 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9093b7fa-1743-41cd-9dae-9a8a12641268")
 	)
 	(wire
 		(pts
@@ -2768,16 +4106,6 @@
 			(type default)
 		)
 		(uuid "ac904df6-047d-481c-92e0-801d111891fd")
-	)
-	(wire
-		(pts
-			(xy 198.12 85.09) (xy 208.28 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1376315-1ea3-4496-8e3d-aad67d878313")
 	)
 	(wire
 		(pts
@@ -2878,16 +4206,6 @@
 			(type default)
 		)
 		(uuid "cc370f05-b3f4-4b19-be4e-f4bee17f7a02")
-	)
-	(wire
-		(pts
-			(xy 123.19 128.27) (xy 123.19 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdbdda8a-02d7-481a-9f7a-a5c7130bb8c8")
 	)
 	(wire
 		(pts
@@ -3001,16 +4319,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 97.79) (xy 208.28 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7287232-9e4c-4fa2-b62b-460b1d782fef")
-	)
-	(wire
-		(pts
 			(xy 91.44 119.38) (xy 96.52 119.38)
 		)
 		(stroke
@@ -3028,6 +4336,16 @@
 			(type default)
 		)
 		(uuid "ede6f56c-9a0a-4a9f-a893-100c397237ea")
+	)
+	(wire
+		(pts
+			(xy 205.74 97.79) (xy 208.28 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb86c43-2792-4dde-8d4e-34ee728dcfc4")
 	)
 	(wire
 		(pts
@@ -3051,7 +4369,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 87.63) (xy 208.28 87.63)
+			(xy 205.74 95.25) (xy 208.28 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2b8f703-45bf-4f1b-bd6a-21ac9eec6286")
+	)
+	(wire
+		(pts
+			(xy 205.74 87.63) (xy 208.28 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3130,12 +4458,12 @@
 		(uuid "3bb98a1a-a119-417f-bcb2-dbe78c1d1a84")
 	)
 	(label "OSC_OUT"
-		(at 198.12 87.63 0)
+		(at 205.74 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "3ca73f18-5046-419a-a063-77e870ee5829")
 	)
@@ -3180,7 +4508,7 @@
 		(uuid "9acb6f61-04c1-48d9-a9f6-0437bca3913a")
 	)
 	(label "LED_STATUS_2"
-		(at 181.61 102.87 180)
+		(at 205.74 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3190,17 +4518,17 @@
 		(uuid "9af8bdcf-2ac9-4c96-85b8-770449a2d60b")
 	)
 	(label "OSC_IN"
-		(at 198.12 85.09 0)
+		(at 205.74 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "aacc7073-cfcf-4905-9b5f-4219b52c41df")
 	)
 	(label "LED_STATUS_1"
-		(at 181.61 100.33 180)
+		(at 205.74 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3240,12 +4568,12 @@
 		(uuid "fb54c2e8-bbbe-4571-a7db-e68553fe9b61")
 	)
 	(label "NRST"
-		(at 198.12 77.47 0)
+		(at 205.74 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fc344a0b-2992-454b-a558-74a530501e26")
 	)
@@ -3258,28 +4586,6 @@
 			(justify left bottom)
 		)
 		(uuid "fef099ab-4d54-4721-8667-d82555ce5960")
-	)
-	(hierarchical_label "3.3V_ANALOG_INPUT_9"
-		(shape input)
-		(at 205.74 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "04861e6c-e36e-4520-9615-5c1fc1fb2948")
-	)
-	(hierarchical_label "3.3V_ANALOG_INPUT_8"
-		(shape input)
-		(at 205.74 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "15d59135-ec0a-41a6-a62c-ec5360cbf06b")
 	)
 	(hierarchical_label "CAN_TX"
 		(shape input)
@@ -3412,7 +4718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02017a7a-bd76-4a6e-8062-7c5f1787fdc8")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR014"
 			(at 110.49 90.17 0)
 			(effects
 				(font
@@ -3461,7 +4767,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR045")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3483,7 +4789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04913f89-84a7-43d5-a155-ec5107b1d148")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR010"
 			(at 81.28 134.62 0)
 			(effects
 				(font
@@ -3532,7 +4838,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR041")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -3545,6 +4851,7 @@
 		)
 	)
 	(symbol
+		(lib_name "+3.3V_3")
 		(lib_id "power:+3.3V")
 		(at 218.44 67.31 0)
 		(unit 1)
@@ -3553,7 +4860,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04a5e850-b086-4dc6-a82d-4c05ea431320")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR016"
 			(at 218.44 71.12 0)
 			(effects
 				(font
@@ -3602,7 +4909,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR047")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -3624,7 +4931,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "111243f2-b4e5-4e06-9fcd-d55545abc025")
-		(property "Reference" "C26"
+		(property "Reference" "C10"
 			(at 97.79 71.1262 0)
 			(effects
 				(font
@@ -3677,7 +4984,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C26")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -3699,7 +5006,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20480213-e47a-4c6d-8c94-64c18dfa5a10")
-		(property "Reference" "R9"
+		(property "Reference" "R2"
 			(at 99.06 88.9 90)
 			(effects
 				(font
@@ -3750,7 +5057,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "R9")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3763,6 +5070,7 @@
 		)
 	)
 	(symbol
+		(lib_name "+3.3V_2")
 		(lib_id "power:+3.3V")
 		(at 50.8 87.63 0)
 		(unit 1)
@@ -3772,7 +5080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21d38bf9-162c-414a-afd6-cbf721744e09")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR08"
 			(at 50.8 91.44 0)
 			(effects
 				(font
@@ -3821,7 +5129,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR039")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3834,6 +5142,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_5")
 		(lib_id "power:GND")
 		(at 91.44 128.27 0)
 		(unit 1)
@@ -3843,7 +5152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b855f9b-6b8a-48db-ad61-5e7968b5b154")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR013"
 			(at 91.44 134.62 0)
 			(effects
 				(font
@@ -3892,7 +5201,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR044")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3913,7 +5222,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f2b2f40-862e-4f91-b2ce-0373b545ae24")
-		(property "Reference" "D7"
+		(property "Reference" "D2"
 			(at 127 123.5074 90)
 			(effects
 				(font
@@ -3966,7 +5275,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "D7")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3988,7 +5297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4db267da-c955-43c0-b456-5a49be9d577a")
-		(property "Reference" "C25"
+		(property "Reference" "C9"
 			(at 93.98 123.1962 0)
 			(effects
 				(font
@@ -4041,7 +5350,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C25")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -4062,7 +5371,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f4c5a04-d8d2-4eaf-b76e-b6d7c7dd8f28")
-		(property "Reference" "Y2"
+		(property "Reference" "Y1"
 			(at 83.82 113.03 0)
 			(effects
 				(font
@@ -4119,7 +5428,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "Y2")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -4132,6 +5441,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_8")
 		(lib_id "power:GND")
 		(at 44.45 127 0)
 		(unit 1)
@@ -4141,7 +5451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54c067b7-4ae5-4dfc-aaea-3cc1953c1744")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR07"
 			(at 44.45 133.35 0)
 			(effects
 				(font
@@ -4190,7 +5500,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR038")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4212,7 +5522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65cd79b6-7b1d-4302-8398-26d36427ae28")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 222.9994 120.65 0)
 			(effects
 				(font
@@ -4359,7 +5669,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -4381,7 +5691,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a4300e2-a51f-425f-8d73-f979c2d772da")
-		(property "Reference" "C24"
+		(property "Reference" "C8"
 			(at 87.63 71.1262 0)
 			(effects
 				(font
@@ -4434,7 +5744,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C24")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4456,7 +5766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6acedfa2-839d-4759-8a59-194fc403f7f0")
-		(property "Reference" "C20"
+		(property "Reference" "C4"
 			(at 57.15 71.1262 0)
 			(effects
 				(font
@@ -4509,7 +5819,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C20")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4531,7 +5841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "746f40fa-1ef8-41df-a68e-6cb06ef63783")
-		(property "Reference" "R8"
+		(property "Reference" "R1"
 			(at 92.71 83.82 90)
 			(effects
 				(font
@@ -4582,7 +5892,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "R8")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4605,7 +5915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75ac9634-9d4c-4c32-a87a-f3ed3d5913b1")
-		(property "Reference" "C23"
+		(property "Reference" "C7"
 			(at 78.74 123.1835 0)
 			(effects
 				(font
@@ -4658,7 +5968,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C23")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -4671,6 +5981,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 220.98 123.19 0)
 		(unit 1)
@@ -4680,7 +5991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84014951-c9c5-4300-bf9b-eeec5ce8fa5b")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR017"
 			(at 220.98 129.54 0)
 			(effects
 				(font
@@ -4729,7 +6040,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR048")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -4742,6 +6053,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_3")
 		(lib_id "power:GND")
 		(at 34.29 77.47 0)
 		(unit 1)
@@ -4751,7 +6063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84e0c571-2c9f-4616-905b-b7f1f96b8df4")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR06"
 			(at 34.29 83.82 0)
 			(effects
 				(font
@@ -4800,7 +6112,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR037")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4813,6 +6125,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_2")
 		(lib_id "power:GND")
 		(at 114.3 129.54 0)
 		(unit 1)
@@ -4822,7 +6135,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b9b2d76-8f09-45cf-94c5-ed989e2c79a0")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR015"
 			(at 114.3 135.89 0)
 			(effects
 				(font
@@ -4871,7 +6184,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR046")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -4894,7 +6207,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9554c8f2-ffbc-4fda-8f90-396a7826f66d")
-		(property "Reference" "JP2"
+		(property "Reference" "JP1"
 			(at 53.34 93.9799 90)
 			(effects
 				(font
@@ -4950,7 +6263,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "JP2")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -4972,7 +6285,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a976a4a9-5928-43f8-86fa-7593902bc612")
-		(property "Reference" "R10"
+		(property "Reference" "R3"
 			(at 116.84 113.0299 0)
 			(effects
 				(font
@@ -5025,7 +6338,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "R10")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5038,6 +6351,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_7")
 		(lib_id "power:GND")
 		(at 82.55 102.87 0)
 		(unit 1)
@@ -5046,7 +6360,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b7fc9df2-2660-4f20-af56-0edc4383cdbe")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR011"
 			(at 82.55 109.22 0)
 			(effects
 				(font
@@ -5095,7 +6409,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR042")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5117,7 +6431,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc2816c9-bf76-4698-a59d-240a1c1b5109")
-		(property "Reference" "C17"
+		(property "Reference" "C1"
 			(at 36.83 71.1262 0)
 			(effects
 				(font
@@ -5170,7 +6484,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C17")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -5183,6 +6497,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_6")
 		(lib_id "power:GND")
 		(at 50.8 102.87 0)
 		(unit 1)
@@ -5192,7 +6507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0274ee6-735c-4978-a894-de3d44f1df95")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR09"
 			(at 50.8 109.22 0)
 			(effects
 				(font
@@ -5241,7 +6556,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR040")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5263,7 +6578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c248032e-de89-439a-9396-8886b76a712f")
-		(property "Reference" "R11"
+		(property "Reference" "R4"
 			(at 125.73 113.0299 0)
 			(effects
 				(font
@@ -5316,7 +6631,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "R11")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5329,6 +6644,7 @@
 		)
 	)
 	(symbol
+		(lib_name "LED_1")
 		(lib_id "Device:LED")
 		(at 114.3 123.19 90)
 		(unit 1)
@@ -5338,7 +6654,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8550cbb-a159-43cd-a5af-da9b4ab40280")
-		(property "Reference" "D6"
+		(property "Reference" "D1"
 			(at 118.11 123.5074 90)
 			(effects
 				(font
@@ -5391,7 +6707,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "D6")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -5413,7 +6729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddd7ccce-167d-4bad-a01f-9b43ce4f02f1")
-		(property "Reference" "C19"
+		(property "Reference" "C3"
 			(at 46.99 120.6562 0)
 			(effects
 				(font
@@ -5466,7 +6782,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C19")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -5488,7 +6804,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "deed0bc2-08d3-4308-9e30-4bbe0e27d064")
-		(property "Reference" "C18"
+		(property "Reference" "C2"
 			(at 46.99 71.1262 0)
 			(effects
 				(font
@@ -5541,7 +6857,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C18")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -5563,7 +6879,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e1a80dfa-e865-4650-b7c7-21a0c48ad23b")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 71.12 85.09 0)
 			(effects
 				(font
@@ -5626,7 +6942,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5639,6 +6955,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 91.44 111.76 0)
 		(unit 1)
@@ -5648,7 +6965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e75757bd-0a5b-4fb0-bc27-6ce6c58552fb")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR012"
 			(at 91.44 118.11 0)
 			(effects
 				(font
@@ -5697,7 +7014,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR043")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5719,7 +7036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e97cb7e4-0977-4133-afe1-fcd096c9bba7")
-		(property "Reference" "C21"
+		(property "Reference" "C5"
 			(at 67.31 71.1262 0)
 			(effects
 				(font
@@ -5772,7 +7089,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C21")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -5794,7 +7111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1209e3e-db32-4186-87eb-9197b7dea34e")
-		(property "Reference" "C22"
+		(property "Reference" "C6"
 			(at 77.47 71.1262 0)
 			(effects
 				(font
@@ -5847,7 +7164,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "C22")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5860,6 +7177,7 @@
 		)
 	)
 	(symbol
+		(lib_name "+3.3V_1")
 		(lib_id "power:+3.3V")
 		(at 34.29 67.31 0)
 		(unit 1)
@@ -5869,7 +7187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f489d8f6-ff4d-440b-8225-0fd566c8be24")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR05"
 			(at 34.29 71.12 0)
 			(effects
 				(font
@@ -5918,7 +7236,7 @@
 		(instances
 			(project "canbus_tire_temp_sensor"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/f7ca0aa3-2e40-412d-9746-08f02e08c71b"
-					(reference "#PWR036")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)

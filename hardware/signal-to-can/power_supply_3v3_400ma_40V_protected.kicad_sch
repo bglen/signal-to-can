@@ -252,156 +252,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_TVS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_TVS"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Bidirectional transient-voltage-suppression diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode TVS thyrector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_TVS_0_1"
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_TVS_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -690,6 +540,496 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_1"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_3_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_3_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_4"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_4_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_4_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_5"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_5_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_5_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_6"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_6_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_6_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1198,12 +1538,6 @@
 		(uuid "b1febe90-461e-4463-8e49-8198796afd69")
 	)
 	(junction
-		(at 115.57 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "298992da-5548-4432-9e89-22a213942afc")
-	)
-	(junction
 		(at 153.67 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1251,16 +1585,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 91.44) (xy 115.57 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16d64881-4622-4c87-a66c-d00c4e178e66")
-	)
-	(wire
-		(pts
 			(xy 143.51 93.98) (xy 143.51 91.44)
 		)
 		(stroke
@@ -1271,7 +1595,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 91.44) (xy 125.73 91.44)
+			(xy 111.76 91.44) (xy 125.73 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1298,16 +1622,6 @@
 			(type default)
 		)
 		(uuid "44e413f8-6ebe-4a1c-a590-139835e20638")
-	)
-	(wire
-		(pts
-			(xy 111.76 91.44) (xy 115.57 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "486a2c06-43fd-46e1-9906-5427800e39a9")
 	)
 	(wire
 		(pts
@@ -1351,7 +1665,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 118.11) (xy 115.57 120.65)
+			(xy 125.73 107.95) (xy 125.73 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1408,16 +1722,6 @@
 			(type default)
 		)
 		(uuid "a4a576cf-0b3d-4afb-a1f5-004fa0494dee")
-	)
-	(wire
-		(pts
-			(xy 115.57 100.33) (xy 115.57 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a966e869-bb0e-49f6-bd71-009fe9a3157c")
 	)
 	(wire
 		(pts
@@ -1489,7 +1793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b2ff493-05c0-45c9-87e7-57560406c56c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR021"
 			(at 153.67 109.22 0)
 			(effects
 				(font
@@ -1544,7 +1848,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -1566,7 +1870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17b268b9-5869-461c-9070-902828dffb99")
-		(property "Reference" "R?"
+		(property "Reference" "R5"
 			(at 191.77 95.2499 0)
 			(effects
 				(font
@@ -1625,7 +1929,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "R?")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -1647,7 +1951,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46b7b789-1a02-426b-be2d-806fa8adbca5")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR018"
 			(at 115.57 91.44 0)
 			(effects
 				(font
@@ -1698,7 +2002,7 @@
 		(instances
 			(project ""
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR049")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -1714,7 +2018,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a827fa8-a6b4-4f6e-b6a4-de2cfd00b4b3")
-		(property "Reference" "C?"
+		(property "Reference" "C12"
 			(at 151.13 95.2435 0)
 			(effects
 				(font
@@ -1773,7 +2077,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "C?")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -1795,7 +2099,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d81d01f-1786-47f3-bad5-ee6c45956245")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR024"
 			(at 189.23 92.71 0)
 			(effects
 				(font
@@ -1850,7 +2154,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -1863,6 +2167,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_6")
 		(lib_id "power:GND")
 		(at 163.83 102.87 0)
 		(unit 1)
@@ -1872,7 +2177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5458e375-f5ac-4882-ba64-831562fdc251")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR022"
 			(at 163.83 109.22 0)
 			(effects
 				(font
@@ -1927,7 +2232,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -1940,8 +2245,9 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_5")
 		(lib_id "power:GND")
-		(at 115.57 120.65 0)
+		(at 125.73 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1949,8 +2255,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "590869f8-df93-4552-9a16-ab2ea7c06a57")
-		(property "Reference" "#PWR?"
-			(at 115.57 127 0)
+		(property "Reference" "#PWR019"
+			(at 125.73 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1959,7 +2265,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 125.73 0)
+			(at 125.73 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1967,7 +2273,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 120.65 0)
+			(at 125.73 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1976,7 +2282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 120.65 0)
+			(at 125.73 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1985,7 +2291,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 120.65 0)
+			(at 125.73 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2004,7 +2310,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -2017,6 +2323,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 173.99 101.6 0)
 		(unit 1)
@@ -2026,7 +2333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64aaa314-aa55-4db4-b8c0-f45f6590d69d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR023"
 			(at 173.99 107.95 0)
 			(effects
 				(font
@@ -2081,7 +2388,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -2094,6 +2401,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_3")
 		(lib_id "power:GND")
 		(at 189.23 110.49 0)
 		(unit 1)
@@ -2103,7 +2411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a4a8dd1-d5e5-4014-8ad6-d4d2acbf0334")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR025"
 			(at 189.23 116.84 0)
 			(effects
 				(font
@@ -2158,171 +2466,13 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
 			(project "canbus_tire_temp_sensor"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b68ab937-188e-4e6d-8c94-721c05c291d6"
 					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 115.57 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7af458d0-e598-4b62-aff2-8e9229bd7d87")
-		(property "Reference" "D?"
-			(at 118.11 95.2499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMBJ36CA-13-F"
-			(at 118.11 97.7899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 115.57 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bea56b8d-2aa3-4528-b852-5b649bce7817")
-		)
-		(pin "2"
-			(uuid "ab983734-7965-42a0-b663-1b5bde311352")
-		)
-		(instances
-			(project "power_supply_3v3_400ma_40V_protected"
-				(path "/49cac681-4fee-4c3c-9188-8849ebd3eabe"
-					(reference "D?")
-					(unit 1)
-				)
-			)
-			(project "power_supply_3v3_400ma_40V_protected"
-				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "D?")
-					(unit 1)
-				)
-			)
-			(project "canbus_tire_temp_sensor"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b68ab937-188e-4e6d-8c94-721c05c291d6"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 115.57 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93a38159-b85b-4699-917d-a58add62bc34")
-		(property "Reference" "#PWR?"
-			(at 115.57 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 115.57 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "77a13539-5b23-40a7-9427-0af8cbd6fa24")
-		)
-		(instances
-			(project "power_supply_3v3_400ma_40V_protected"
-				(path "/49cac681-4fee-4c3c-9188-8849ebd3eabe"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "power_supply_3v3_400ma_40V_protected"
-				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "canbus_tire_temp_sensor"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b68ab937-188e-4e6d-8c94-721c05c291d6"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2339,7 +2489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9449624c-d9ef-4456-b490-7ae3778a51df")
-		(property "Reference" "C?"
+		(property "Reference" "C11"
 			(at 140.97 95.2435 0)
 			(effects
 				(font
@@ -2398,7 +2548,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "C?")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -2420,7 +2570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae92b4ba-7e34-4c85-8f67-0b7dce7be9a2")
-		(property "Reference" "D?"
+		(property "Reference" "D3"
 			(at 193.04 105.7274 90)
 			(effects
 				(font
@@ -2479,7 +2629,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "D?")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -2502,7 +2652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b402a1f1-623e-4d0a-b61f-9a44cd50d83e")
-		(property "Reference" "C?"
+		(property "Reference" "C13"
 			(at 176.53 93.9862 0)
 			(effects
 				(font
@@ -2561,7 +2711,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "C?")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -2574,6 +2724,7 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 143.51 102.87 0)
 		(unit 1)
@@ -2583,7 +2734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5c54536-dbcb-498a-b827-e2227cd908b8")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR020"
 			(at 143.51 109.22 0)
 			(effects
 				(font
@@ -2638,7 +2789,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "#PWR?")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -2660,7 +2811,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9336ec8-e850-4dad-9d55-c8f848945707")
-		(property "Reference" "TP?"
+		(property "Reference" "TP3"
 			(at 181.61 85.5979 0)
 			(effects
 				(font
@@ -2678,7 +2829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 184.15 90.17 0)
 			(effects
 				(font
@@ -2716,7 +2867,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "TP?")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2738,7 +2889,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccbe53dc-fcc4-4fc0-9d6a-2a5e7b0d9da6")
-		(property "Reference" "U?"
+		(property "Reference" "U2"
 			(at 163.83 83.82 0)
 			(effects
 				(font
@@ -2798,7 +2949,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "U?")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2812,7 +2963,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 115.57 118.11 0)
+		(at 125.73 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2820,8 +2971,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e19a4006-147c-48a5-8437-afa28607fb27")
-		(property "Reference" "TP?"
-			(at 118.11 113.5379 0)
+		(property "Reference" "TP2"
+			(at 128.27 103.3779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2830,7 +2981,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 116.0779 0)
+			(at 128.27 105.9179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,8 +2989,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 120.65 118.11 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 130.81 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 118.11 0)
+			(at 130.81 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2857,7 +3008,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 118.11 0)
+			(at 125.73 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2876,7 +3027,7 @@
 			)
 			(project "power_supply_3v3_400ma_40V_protected"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/7b74f6f5-1560-4843-a54e-584b3d17c5b1"
-					(reference "TP?")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -2916,7 +3067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 130.81 90.17 0)
 			(effects
 				(font
