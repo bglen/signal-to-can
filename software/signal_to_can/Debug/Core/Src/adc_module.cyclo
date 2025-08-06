@@ -1,0 +1,2 @@
+../Core/Src/adc_module.c:18:19:ADC_Module_Init	1
+../Core/Src/adc_module.c:25:19:ADC_Module_Poll	5

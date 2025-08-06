@@ -1,0 +1,5 @@
+../Core/Src/can_module.c:25:19:CAN_Module_Init	2
+../Core/Src/can_module.c:37:19:CAN_Module_Send	1
+../Core/Src/can_module.c:48:19:CAN_Module_UpdateFilter	1
+../Core/Src/can_module.c:53:6:CAN_Module_RegisterRxCallback	2
+../Core/Src/can_module.c:60:6:HAL_CAN_RxFifo0MsgPendingCallback	5

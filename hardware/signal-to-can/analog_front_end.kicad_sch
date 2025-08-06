@@ -980,6 +980,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "TVS Package, SOD-323, sucks to place on pcb"
+		(exclude_from_sim no)
+		(at 129.54 45.72 0)
+		(size 20.32 8.89)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "61ebc250-72f8-4286-b1c7-287951d22bcb")
+	)
 	(text_box "Requirements:\n- 8 Analog inputs\n- 10 mV resolution at 3.3v to 12V\n- Tolerant of automotive spikes\n- Clamp ADC pin to -0.3 - 4.0V\n- ESD protection for HBM"
 		(exclude_from_sim no)
 		(at 15.24 15.24 0)

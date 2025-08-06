@@ -3345,6 +3345,26 @@
 		)
 		(uuid "b5c07237-97c8-4f49-823c-443365b2757d")
 	)
+	(text_box "verify crystal footprint\n"
+		(exclude_from_sim no)
+		(at 93.98 106.68 0)
+		(size 10.16 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "97af847a-94a0-40ac-9504-32dcc2a3b9e1")
+	)
 	(text_box "- power supply de-coupling\n- TC2030 programing\n- boot select switch\n- 16 Mhz HSE oscillator\n- status LEDs"
 		(exclude_from_sim no)
 		(at 15.494 23.114 0)
