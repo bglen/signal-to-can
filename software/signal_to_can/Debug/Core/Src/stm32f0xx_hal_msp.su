@@ -2,4 +2,4 @@
 ../Core/Src/stm32f0xx_hal_msp.c:86:6:HAL_ADC_MspInit	56	static
 ../Core/Src/stm32f0xx_hal_msp.c:128:6:HAL_ADC_MspDeInit	16	static
 ../Core/Src/stm32f0xx_hal_msp.c:164:6:HAL_CAN_MspInit	56	static
-../Core/Src/stm32f0xx_hal_msp.c:201:6:HAL_CAN_MspDeInit	16	static
+../Core/Src/stm32f0xx_hal_msp.c:208:6:HAL_CAN_MspDeInit	16	static

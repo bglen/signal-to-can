@@ -3333,6 +3333,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "BOOT0 to 3V3: Boot to system memory\nBOOT0 to GND: Boot to flash memory"
+		(exclude_from_sim no)
+		(at 35.56 141.986 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5484dfe3-7590-45bf-b31d-97dc4089cced")
+	)
 	(text "Microcontroller"
 		(exclude_from_sim no)
 		(at 15.24 20.32 0)
