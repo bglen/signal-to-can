@@ -1,0 +1,17 @@
+../Core/Src/adc_module.c:52:17:adc_max_count	8	static
+../Core/Src/adc_module.c:71:26:adc_select_channel	40	static
+../Core/Src/adc_module.c:93:26:start_next_enabled_conversion	32	static
+../Core/Src/adc_module.c:131:13:service_conversion_state	32	static
+../Core/Src/adc_module.c:166:13:recompute_cycle_interval	16	static
+../Core/Src/adc_module.c:175:19:ADC_Module_Init	32	static
+../Core/Src/adc_module.c:209:6:ADC_Module_Task	16	static
+../Core/Src/adc_module.c:236:6:ADC_Module_Enable_Channel	16	static
+../Core/Src/adc_module.c:248:6:ADC_Module_Set_Enable_Mask	16	static
+../Core/Src/adc_module.c:253:9:ADC_Module_Get_Enable_Mask	8	static
+../Core/Src/adc_module.c:258:6:ADC_Module_Set_Scale	16	static
+../Core/Src/adc_module.c:266:6:ADC_Module_Set_Vref_Mv	16	static
+../Core/Src/adc_module.c:274:6:ADC_Module_Set_Sample_Rate	16	static
+../Core/Src/adc_module.c:286:10:ADC_Module_Get_Sample_Rate	8	static
+../Core/Src/adc_module.c:291:10:ADC_Module_Get_Raw	16	static
+../Core/Src/adc_module.c:299:7:ADC_Module_Get_Pin_Voltage	16	static
+../Core/Src/adc_module.c:307:7:ADC_Module_Get_Scaled_Voltage	16	static

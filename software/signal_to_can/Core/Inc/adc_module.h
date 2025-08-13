@@ -1,312 +1,130 @@
-/* adc_module.c
+/* adc_module.h
  *
- * Implementation of a non-blocking, round-robin ADC sampler for STM32F042.
- * - Single conversion per channel, polled with zero-timeout to avoid blocking.
- * - Each enabled channel is sampled once per "cycle"; cycle period = 1 / sample_rate_hz.
- * - Converts raw counts to pin voltage using vref_mv and ADC resolution.
- * - Applies a per-channel external scaling gain to produce "scaled voltage".
+ *  - Initialize ADC (CubeMX does base config; this module calibrates and prepares runtime state)
+ *  - Enable/disable ADC inputs on the fly (channels 0..7)
+ *  - Sample all enabled channels at a target sample rate (Hz) in a non-blocking task called from main loop
+ *  - Adjust sample rate on the fly
+ *  - Convert raw ADC readings to pin voltage, with optional per-channel external scaling (e.g., voltage divider)
+ *  - Provide getters for raw, pin-voltage, and scaled-voltage per channel
  *
- * Integration:
- *   1) Call ADC_Module_Init(&hadc, 3300, 100);
- *   2) Enable desired channels (ADC_Module_Set_Enable_Mask or ADC_Module_Enable_Channel).
- *   3) In main loop, call ADC_Module_Task() frequently.
- *   4) Read values via getters.
+ * Notes:
+ *  - Uses single-conversion, one channel at a time, round-robin across enabled channels.
+ *  - Call ADC_Module_Task() frequently from the main loop.
+ *  - No use of <stdbool.h>; all flags are uint8_t.
  */
 
-#include "adc_module.h"
-#include <string.h>
+#ifndef ADC_MODULE_H
+#define ADC_MODULE_H
 
-/* ===== Private state ===== */
+#include "stm32f0xx_hal.h"
+#include <stdint.h>
 
-static ADC_HandleTypeDef *s_adc = NULL;
+/* Number of logical channels managed by this module (0..7). */
+#define ADC_MODULE_CHANNEL_COUNT 8u
 
-static uint8_t  s_enable_mask = 0u;  /* bit i enables channel i */
-static uint16_t s_raw[ADC_MODULE_CHANNEL_COUNT];
-static float    s_pin_v[ADC_MODULE_CHANNEL_COUNT];
-static float    s_scaled_v[ADC_MODULE_CHANNEL_COUNT];
-static float    s_scale_gain[ADC_MODULE_CHANNEL_COUNT];
-
-static uint32_t s_vref_mv = 3300u;
-
-static uint16_t s_sample_hz = ADC_MODULE_DEFAULT_RATE_HZ;
-static uint32_t s_cycle_interval_ms = 10u; /* computed from s_sample_hz */
-
-static uint32_t s_cycle_start_ms = 0u;
-static uint8_t  s_scan_active = 0u;
-static uint8_t  s_conv_in_progress = 0u;
-static uint8_t  s_active_channel = 0xFFu;
-
-/* Map logical channel 0..7 to HAL channel constants.
- * Adjust if your hardware routes signals differently.
- */
-static const uint32_t s_hal_channel_map[ADC_MODULE_CHANNEL_COUNT] = {
-    ADC_CHANNEL_0, ADC_CHANNEL_1, ADC_CHANNEL_2, ADC_CHANNEL_3,
-    ADC_CHANNEL_4, ADC_CHANNEL_5, ADC_CHANNEL_6, ADC_CHANNEL_7
-};
-
-/* ===== Helpers ===== */
-
-/**
- * @brief Return max ADC count based on configured resolution.
- */
-static uint32_t adc_max_count(void)
-{
-    if (s_adc == NULL) {
-        return 4095u;
-    }
-
-    /* Map HAL enum to numeric maximum. */
-    switch (s_adc->Init.Resolution) {
-    case ADC_RESOLUTION_6B:  return 63u;
-    case ADC_RESOLUTION_8B:  return 255u;
-    case ADC_RESOLUTION_10B: return 1023u;
-    case ADC_RESOLUTION_12B:
-    default:                 return 4095u;
-    }
-}
-
-/**
- * @brief Configure the ADC to convert the given HAL channel in single mode.
- */
-static HAL_StatusTypeDef adc_select_channel(uint32_t hal_channel)
-{
-    ADC_ChannelConfTypeDef s_config;
-    memset(&s_config, 0, sizeof(s_config));
-
-    s_config.Channel      = hal_channel;
-    s_config.Rank         = ADC_RANK_CHANNEL_NUMBER; /* F0 uses channel number as rank in some HAL versions */
-    s_config.SamplingTime = ADC_MODULE_SAMPLETIME;
-
-    /* Some HAL versions require ADC_REGULAR_RANK_1; fallback if available. */
-#ifdef ADC_REGULAR_RANK_1
-    s_config.Rank = ADC_REGULAR_RANK_1;
+/* Compile-time override for per-conversion sampling time. Choose a valid F0 value. */
+#ifndef ADC_MODULE_SAMPLETIME
+#define ADC_MODULE_SAMPLETIME ADC_SAMPLETIME_239CYCLES_5
 #endif
 
-    return HAL_ADC_ConfigChannel(s_adc, &s_config);
-}
-
-/**
- * @brief Start conversion for the next enabled channel after 'start_index'.
- *        If start_index is 0xFF, begin from channel 0.
- * @return HAL_OK if a conversion was started, HAL_BUSY if none enabled, or error.
- */
-static HAL_StatusTypeDef start_next_enabled_conversion(uint8_t start_index)
-{
-    if (s_adc == NULL) {
-        return HAL_ERROR;
-    }
-
-    uint8_t idx = (start_index == 0xFFu) ? 0u : (uint8_t)(start_index + 1u);
-
-    /* Search across all channels once. */
-    for (uint8_t n = 0u; n < ADC_MODULE_CHANNEL_COUNT; n++) {
-        uint8_t ch = (uint8_t)((idx + n) % ADC_MODULE_CHANNEL_COUNT);
-        if ((s_enable_mask & (1u << ch)) == 0u) {
-            continue;
-        }
-
-        HAL_StatusTypeDef st = adc_select_channel(s_hal_channel_map[ch]);
-        if (st != HAL_OK) {
-            return st;
-        }
-
-        s_active_channel = ch;
-
-        st = HAL_ADC_Start(s_adc);
-        if (st == HAL_OK) {
-            s_conv_in_progress = 1u;
-        }
-        return st;
-    }
-
-    /* No channel enabled. */
-    s_active_channel   = 0xFFu;
-    s_conv_in_progress = 0u;
-    return HAL_BUSY;
-}
-
-/**
- * @brief Finish an in-progress conversion if ready, store results, and advance.
- */
-static void service_conversion_state(void)
-{
-    if (s_conv_in_progress == 0u || s_adc == NULL) {
-        return;
-    }
-
-    /* Zero-timeout poll to avoid blocking. */
-    if (HAL_ADC_PollForConversion(s_adc, 0u) == HAL_OK) {
-        uint32_t raw = HAL_ADC_GetValue(s_adc);
-        (void)HAL_ADC_Stop(s_adc);  /* Stop single conversion */
-
-        uint8_t ch = s_active_channel;
-        if (ch < ADC_MODULE_CHANNEL_COUNT) {
-            s_raw[ch] = (uint16_t)(raw & 0xFFFFu);
-
-            /* Convert to pin voltage in volts. */
-            float pin_v = ((float)raw * (float)s_vref_mv) / ((float)adc_max_count() * 1000.0f);
-            s_pin_v[ch]    = pin_v;
-            s_scaled_v[ch] = pin_v * s_scale_gain[ch];
-        }
-
-        s_conv_in_progress = 0u;
-
-        /* Start the next enabled channel in this cycle, if any. */
-        if (start_next_enabled_conversion(ch) != HAL_OK) {
-            /* No more channels or error; end of scan for this cycle. */
-            s_scan_active = 0u;
-            s_active_channel = 0xFFu;
-        }
-    }
-}
-
-/**
- * @brief Recompute cycle interval (ms) from sample rate.
- */
-static void recompute_cycle_interval(void)
-{
-    uint16_t hz = (s_sample_hz == 0u) ? 1u : s_sample_hz;
-    /* Round to nearest integer ms to keep timing stable. */
-    s_cycle_interval_ms = (uint32_t)((1000u + (hz / 2u)) / hz);
-}
+/* Default sample rate if not set explicitly (Hz). */
+#ifndef ADC_MODULE_DEFAULT_RATE_HZ
+#define ADC_MODULE_DEFAULT_RATE_HZ 100u
+#endif
 
 /* ===== Public API ===== */
 
-HAL_StatusTypeDef ADC_Module_Init(ADC_HandleTypeDef *hadc, uint32_t vref_mv, uint16_t sample_hz)
-{
-    if (hadc == NULL) {
-        return HAL_ERROR;
-    }
+/**
+ * @brief Initialize the ADC helper module.
+ *        Performs optional calibration (if supported by HAL), resets internal buffers,
+ *        sets default enable mask (all disabled), default scaling (1.0), and target sample rate.
+ *        The ADC base configuration (clock, resolution, alignment) must be done via CubeMX.
+ *
+ * @param hadc        Pointer to the ADC handle configured by CubeMX.
+ * @param vref_mv     Reference voltage in millivolts (e.g., 3300 for 3.3 V).
+ * @param sample_hz   Desired per-channel sample frequency in Hz (each enabled channel sampled once per cycle).
+ * @return HAL_OK on success, otherwise HAL error code.
+ */
+HAL_StatusTypeDef ADC_Module_Init(ADC_HandleTypeDef *hadc, uint32_t vref_mv, uint16_t sample_hz);
 
-    s_adc = hadc;
-    s_vref_mv = (vref_mv == 0u) ? 3300u : vref_mv;
+/**
+ * @brief Task function to be called frequently from the main loop.
+ *        Non-blocking state machine that schedules conversions and collects results.
+ */
+void ADC_Module_Task(void);
 
-    /* Default all disabled, unity scale, zero readings. */
-    s_enable_mask = 0u;
-    for (uint8_t i = 0u; i < ADC_MODULE_CHANNEL_COUNT; i++) {
-        s_scale_gain[i] = 1.0f;
-        s_raw[i] = 0u;
-        s_pin_v[i] = 0.0f;
-        s_scaled_v[i] = 0.0f;
-    }
+/**
+ * @brief Enable or disable a single logical channel (0..7).
+ *
+ * @param channel_index  Channel index 0..7.
+ * @param enable         0 to disable, nonzero to enable.
+ */
+void ADC_Module_Enable_Channel(uint8_t channel_index, uint8_t enable);
 
-	#ifdef HAL_ADCEx_Calibration_Start
-		(void)HAL_ADCEx_Calibration_Start(s_adc);
-	#endif
+/**
+ * @brief Set the enable bitmask for channels.
+ *
+ * @param enable_mask Bit i enables channel i when set (i=0..7).
+ */
+void ADC_Module_Set_Enable_Mask(uint8_t enable_mask);
 
-    s_sample_hz = (sample_hz == 0u) ? ADC_MODULE_DEFAULT_RATE_HZ : sample_hz;
-    recompute_cycle_interval();
+/**
+ * @brief Get the current enable bitmask.
+ *
+ * @return Bitmask of enabled channels.
+ */
+uint8_t ADC_Module_Get_Enable_Mask(void);
 
-    s_cycle_start_ms   = HAL_GetTick();
-    s_scan_active      = 0u;
-    s_conv_in_progress = 0u;
-    s_active_channel   = 0xFFu;
+/**
+ * @brief Update the per-channel external scaling factor (e.g., undo a divider).
+ *        Scaled voltage is pin_voltage * scale_gain.
+ *
+ * @param channel_index Channel index 0..7.
+ * @param scale_gain    Multiplicative gain (float). Use 1.0f for no scaling.
+ */
+void ADC_Module_Set_Scale(uint8_t channel_index, float scale_gain);
 
-    return HAL_OK;
-}
+/**
+ * @brief Set the ADC reference voltage in millivolts used for conversion to volts.
+ *
+ * @param vref_mv Reference voltage in millivolts.
+ */
+void ADC_Module_Set_Vref_Mv(uint32_t vref_mv);
 
-void ADC_Module_Task(void)
-{
-    if (s_adc == NULL) {
-        return;
-    }
+/**
+ * @brief Change the per-channel sample rate on the fly.
+ *
+ * @param sample_hz New sample rate in Hz (per channel). Clamped to [1..2000].
+ */
+void ADC_Module_Set_Sample_Rate(uint16_t sample_hz);
 
-    /* Always try to progress any in-flight conversion. */
-    service_conversion_state();
+/**
+ * @brief Get the current per-channel sample rate in Hz.
+ */
+uint16_t ADC_Module_Get_Sample_Rate(void);
 
-    uint32_t now = HAL_GetTick();
+/**
+ * @brief Get the latest raw ADC sample for a channel.
+ *
+ * @param channel_index Channel index 0..7.
+ * @return Raw ADC counts (resolution-dependent). Returns 0 if index invalid.
+ */
+uint16_t ADC_Module_Get_Raw(uint8_t channel_index);
 
-    /* Start a new cycle when interval elapsed and no scan is active. */
-    if (s_scan_active == 0u) {
-        if ((now - s_cycle_start_ms) >= s_cycle_interval_ms) {
-            s_cycle_start_ms = now;
-            s_scan_active = 1u;
-            s_conv_in_progress = 0u;
-            s_active_channel = 0xFFu;
+/**
+ * @brief Get the latest pin voltage (volts) for a channel (before external scaling).
+ *
+ * @param channel_index Channel index 0..7.
+ * @return Pin voltage in volts. Returns 0.0f if index invalid.
+ */
+float ADC_Module_Get_Pin_Voltage(uint8_t channel_index);
 
-            /* Begin with the first enabled channel. If none enabled, stay idle. */
-            if (start_next_enabled_conversion(0xFFu) != HAL_OK) {
-                s_scan_active = 0u; /* nothing to do this cycle */
-            }
-        }
-    }
-}
+/**
+ * @brief Get the latest scaled voltage (volts) for a channel (after external scaling).
+ *
+ * @param channel_index Channel index 0..7.
+ * @return Scaled voltage in volts. Returns 0.0f if index invalid.
+ */
+float ADC_Module_Get_Scaled_Voltage(uint8_t channel_index);
 
-void ADC_Module_Enable_Channel(uint8_t channel_index, uint8_t enable)
-{
-    if (channel_index >= ADC_MODULE_CHANNEL_COUNT) {
-        return;
-    }
-    if (enable) {
-        s_enable_mask |= (uint8_t)(1u << channel_index);
-    } else {
-        s_enable_mask &= (uint8_t)~(1u << channel_index);
-    }
-}
-
-void ADC_Module_Set_Enable_Mask(uint8_t enable_mask)
-{
-    s_enable_mask = enable_mask;
-}
-
-uint8_t ADC_Module_Get_Enable_Mask(void)
-{
-    return s_enable_mask;
-}
-
-void ADC_Module_Set_Scale(uint8_t channel_index, float scale_gain)
-{
-    if (channel_index >= ADC_MODULE_CHANNEL_COUNT) {
-        return;
-    }
-    s_scale_gain[channel_index] = scale_gain;
-}
-
-void ADC_Module_Set_Vref_Mv(uint32_t vref_mv)
-{
-    if (vref_mv == 0u) {
-        return;
-    }
-    s_vref_mv = vref_mv;
-}
-
-void ADC_Module_Set_Sample_Rate(uint16_t sample_hz)
-{
-    if (sample_hz == 0u) {
-        sample_hz = 1u;
-    }
-    if (sample_hz > 2000u) {
-        sample_hz = 2000u;
-    }
-    s_sample_hz = sample_hz;
-    recompute_cycle_interval();
-}
-
-uint16_t ADC_Module_Get_Sample_Rate(void)
-{
-    return s_sample_hz;
-}
-
-uint16_t ADC_Module_Get_Raw(uint8_t channel_index)
-{
-    if (channel_index >= ADC_MODULE_CHANNEL_COUNT) {
-        return 0u;
-    }
-    return s_raw[channel_index];
-}
-
-float ADC_Module_Get_Pin_Voltage(uint8_t channel_index)
-{
-    if (channel_index >= ADC_MODULE_CHANNEL_COUNT) {
-        return 0.0f;
-    }
-    return s_pin_v[channel_index];
-}
-
-float ADC_Module_Get_Scaled_Voltage(uint8_t channel_index)
-{
-    if (channel_index >= ADC_MODULE_CHANNEL_COUNT) {
-        return 0.0f;
-    }
-    return s_scaled_v[channel_index];
-}
+#endif /* ADC_MODULE_H */

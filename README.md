@@ -1,5 +1,7 @@
 # signal-to-can_device
-Measures analog and digital signals and converts readings to CAN bus messages.
+Measures analog and digital signals and converts readings to CAN bus messages. Easilly powered by 12V automotive systems to make CAN bus datalogging in your vehicle easy.
+
+Power: 12V ~20 mA draw typical.
 
 # CAN Messages
 
