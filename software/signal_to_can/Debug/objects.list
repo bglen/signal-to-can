@@ -1,6 +1,7 @@
 "./Core/Src/adc_module.o"
 "./Core/Src/can_module.o"
 "./Core/Src/main.o"
+"./Core/Src/process_signals.o"
 "./Core/Src/stm32f0xx_hal_msp.o"
 "./Core/Src/stm32f0xx_it.o"
 "./Core/Src/syscalls.o"

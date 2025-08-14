@@ -1,0 +1,16 @@
+../Core/Src/process_signals.c:30:21:adc_raw_to_vpin	1
+../Core/Src/process_signals.c:36:24:volts_to_mV_u16	3
+../Core/Src/process_signals.c:47:20:put_u16_be	1
+../Core/Src/process_signals.c:55:6:Process_Signals_Init	2
+../Core/Src/process_signals.c:71:6:Process_Signals_Update	5
+../Core/Src/process_signals.c:96:6:Process_Signals_Get_All_Raw	3
+../Core/Src/process_signals.c:104:7:Process_Signals_Get_Input_V	2
+../Core/Src/process_signals.c:110:10:Process_Signals_Get_Input_mV	2
+../Core/Src/process_signals.c:116:17:Process_Signals_Get_All_Input_mV	1
+../Core/Src/process_signals.c:121:9:Process_Signals_Get_OutOfRange_Mask	1
+../Core/Src/process_signals.c:126:6:Process_Signals_Set_MinMax	2
+../Core/Src/process_signals.c:133:6:Process_Signals_Get_MinMax	4
+../Core/Src/process_signals.c:140:6:Process_Signals_Set_Divider	3
+../Core/Src/process_signals.c:150:6:Process_Signals_Set_GainOffset	2
+../Core/Src/process_signals.c:157:19:Process_Signals_Send_Can	2
+../Core/Src/process_signals.c:187:19:Process_Signals_Send_Can_If_Due	2

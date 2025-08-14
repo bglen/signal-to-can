@@ -26,6 +26,7 @@
 #include <math.h>
 #include "can_module.h"
 #include "adc_module.h"
+#include "process_signals.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -76,7 +77,10 @@ static uint32_t heartbeat_tick = 0;
 // CAN bus
 uint32_t baud_enum = 2; // 2 -> 500 kbps
 
-// ADC
+// Logic
+uint32_t sample_period = 20; // sample at 50 Hz
+uint32_t timeout_period = 10;
+
 
 // Test
 can_debug_t g_can_dbg = { 0 };
@@ -149,6 +153,8 @@ int main(void)
 		// TODO
 	}
 
+	Process_Signals_Init();
+
 	last_tick = HAL_GetTick();
 	heartbeat_tick = last_tick;
   /* USER CODE END 2 */
@@ -161,11 +167,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  Heartbeat_Task();
-	  uint16_t ch0 = ADC_Module_Get_Raw(0);
-	  Test_Can_Task(ch0);
-
-	  HAL_Delay(10);
-
+	  Process_Signals_Update();
+	  Process_Signals_Send_Can_If_Due(sample_period, timeout_period);
   }
   /* USER CODE END 3 */
 }

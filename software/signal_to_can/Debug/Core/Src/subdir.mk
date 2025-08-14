@@ -8,6 +8,7 @@ C_SRCS += \
 ../Core/Src/adc_module.c \
 ../Core/Src/can_module.c \
 ../Core/Src/main.c \
+../Core/Src/process_signals.c \
 ../Core/Src/stm32f0xx_hal_msp.c \
 ../Core/Src/stm32f0xx_it.c \
 ../Core/Src/syscalls.c \
@@ -18,6 +19,7 @@ OBJS += \
 ./Core/Src/adc_module.o \
 ./Core/Src/can_module.o \
 ./Core/Src/main.o \
+./Core/Src/process_signals.o \
 ./Core/Src/stm32f0xx_hal_msp.o \
 ./Core/Src/stm32f0xx_it.o \
 ./Core/Src/syscalls.o \
@@ -28,6 +30,7 @@ C_DEPS += \
 ./Core/Src/adc_module.d \
 ./Core/Src/can_module.d \
 ./Core/Src/main.d \
+./Core/Src/process_signals.d \
 ./Core/Src/stm32f0xx_hal_msp.d \
 ./Core/Src/stm32f0xx_it.d \
 ./Core/Src/syscalls.d \
@@ -42,7 +45,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/adc_module.cyclo ./Core/Src/adc_module.d ./Core/Src/adc_module.o ./Core/Src/adc_module.su ./Core/Src/can_module.cyclo ./Core/Src/can_module.d ./Core/Src/can_module.o ./Core/Src/can_module.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f0xx_hal_msp.cyclo ./Core/Src/stm32f0xx_hal_msp.d ./Core/Src/stm32f0xx_hal_msp.o ./Core/Src/stm32f0xx_hal_msp.su ./Core/Src/stm32f0xx_it.cyclo ./Core/Src/stm32f0xx_it.d ./Core/Src/stm32f0xx_it.o ./Core/Src/stm32f0xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f0xx.cyclo ./Core/Src/system_stm32f0xx.d ./Core/Src/system_stm32f0xx.o ./Core/Src/system_stm32f0xx.su
+	-$(RM) ./Core/Src/adc_module.cyclo ./Core/Src/adc_module.d ./Core/Src/adc_module.o ./Core/Src/adc_module.su ./Core/Src/can_module.cyclo ./Core/Src/can_module.d ./Core/Src/can_module.o ./Core/Src/can_module.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/process_signals.cyclo ./Core/Src/process_signals.d ./Core/Src/process_signals.o ./Core/Src/process_signals.su ./Core/Src/stm32f0xx_hal_msp.cyclo ./Core/Src/stm32f0xx_hal_msp.d ./Core/Src/stm32f0xx_hal_msp.o ./Core/Src/stm32f0xx_hal_msp.su ./Core/Src/stm32f0xx_it.cyclo ./Core/Src/stm32f0xx_it.d ./Core/Src/stm32f0xx_it.o ./Core/Src/stm32f0xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f0xx.cyclo ./Core/Src/system_stm32f0xx.d ./Core/Src/system_stm32f0xx.o ./Core/Src/system_stm32f0xx.su
 
 .PHONY: clean-Core-2f-Src
 
