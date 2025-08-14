@@ -1,7 +1,33 @@
-# signal-to-can_device
+# signal-to-can device
+
+![PCB view of device](/docs/board.png)
+
 Measures analog and digital signals and converts readings to CAN bus messages. Easilly powered by 12V automotive systems to make CAN bus datalogging in your vehicle easy.
 
-Power: 12V ~20 mA draw typical.
+- 8 ADC inputs with seperate signal grounds
+  
+- CAN 2.0b communication output
+  
+- Fully configurable through the CAN interface
+  
+- 3.3V and 5V sensor power supply
+  
+- Easilly powered by 12V automotive systems
+
+### Enclosure
+
+The repo contains a 3D-printable enclosure. We reccomend ASA, ABS, PC-ABS, or Nylon for automotive enviornments.
+
+Front            |  Rear
+:-------------------------:|:-------------------------:
+![Enclosure front](/docs/enclosure_front.png)  |  ![Enclosure rear](/docs/enclosure_rear.png)
+
+### TODO
+- Update board with schematic changes
+- Calibration test points
+- Choose new potentiometer for rev 2
+- configuration CAN message
+
 
 # CAN Messages
 
