@@ -14,6 +14,12 @@ Measures analog and digital signals and converts readings to CAN bus messages. E
   
 - Easilly powered by 12V automotive systems
 
+- Per-channel configurable voltage offset and scaling
+
+- Per-channel configurable out-of-range limits
+
+- Pre-made DBC file you can use or edit as a template
+
 ### Enclosure
 
 The repo contains a 3D-printable enclosure. We reccomend ASA, ABS, PC-ABS, or Nylon for automotive enviornments.
